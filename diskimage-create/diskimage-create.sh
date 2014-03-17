@@ -94,10 +94,10 @@ export ELEMENTS_PATH="$DIB_REPO_PATH/elements"
 
 if [ -z $SIM_REPO_PATH ]; then
   SIM_REPO_PATH="$(dirname $base_dir)"
-  if [ $(basename $SIM_REPO_PATH) != "savanna-image-elements" ]; then
-    echo "Can't find Savanna-image-elements repository. Cloning it."
-    git clone https://git.openstack.org/openstack/savanna-image-elements
-    SIM_REPO_PATH="$(pwd)/savanna-image-elements"
+  if [ $(basename $SIM_REPO_PATH) != "sahara-image-elements" ]; then
+    echo "Can't find Sahara-image-elements repository. Cloning it."
+    git clone https://git.openstack.org/openstack/sahara-image-elements
+    SIM_REPO_PATH="$(pwd)/sahara-image-elements"
   fi
 fi
 
