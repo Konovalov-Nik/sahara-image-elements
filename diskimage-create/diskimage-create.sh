@@ -116,8 +116,8 @@ if [ -z "$PLUGIN" -o "$PLUGIN" = "vanilla" ]; then
   export OOZIE_DOWNLOAD_URL=${OOZIE_DOWNLOAD_URL:-"http://savanna-files.mirantis.com/oozie-4.0.0.tar.gz"}
   export HIVE_VERSION=${HIVE_VERSION:-"0.11.0"}
 
-  ubuntu_elements_sequence="base vm ubuntu hadoop swift_hadoop oozie mysql hive play-framework"
-  fedora_elements_sequence="base vm fedora hadoop swift_hadoop oozie mysql hive play-framework"
+  ubuntu_elements_sequence="base vm ubuntu hadoop swift_hadoop oozie mysql hive play"
+  fedora_elements_sequence="base vm fedora hadoop swift_hadoop oozie mysql hive play"
   centos_elements_sequence="vm rhel hadoop swift_hadoop oozie mysql hive redhat-lsb"
 
   # Workaround for https://bugs.launchpad.net/diskimage-builder/+bug/1204824
