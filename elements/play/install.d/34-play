@@ -12,6 +12,3 @@ echo "Unpacking play"
 unzip play-1.2.5.3.zip
 mv play-1.2.5.3 /usr/share
 
-cat >> /home/hadoop/.bashrc <<EOF
-PATH=\$PATH:/usr/share/play-1.2.5.3/
-EOF
